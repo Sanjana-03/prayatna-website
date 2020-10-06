@@ -8,14 +8,19 @@
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" >
     <link rel="stylesheet" href="css/homepage.css">
-
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
        <div class="container">
        	<img class="logo" src="images/img1.png" alt="logo image" class="hidden-xs">
-          <a class="navbar-brand" href="#">PRAYATNA<br><span>Aspiring Dreams</span></a>
+          <div class="name1">
+  <a href="homepage.html"><h1>Prayatna</h1>
+    </a>
+    <p><span>Aspiring Dreams</span></p>
+</div>
 
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
        <span class="navbar-toggler-icon"></span>
@@ -23,22 +28,30 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
-       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+       <li class="nav-item active"  data-hover="HOME">
+        <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
+       </li>
+       <li class="nav-item" data-hover="ABOUT US">
+        <a class="nav-link" href="#">ABOUT US</a>
+       </li>
+       <li class="nav-item" data-hover="GALLERY">
+        <a class="nav-link" href="#">GALLERY</a>
+       </li>
+       <li class="nav-item" data-hover="STORIES">
+        <a class="nav-link" href="#">STORIES</a>
        </li>
        <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+         <button type="button" >SupportUs</button>
        </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Gallery</a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Stories</a>
-       </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Donate</a>
-       </li>
-     </ul>
+     </ul> 
+		<!--<section class="color-5">
+				<div class="cl-effect-5">
+					<a href="#"><span data-hover="HOME">HOME</span></a>
+					<a href="#"><span data-hover="ABOUT US">ABOUT US</span></a>
+					<a href="#"><span data-hover="GALLERY">GALLERY</span></a>
+					<a href="#"><span data-hover="STORIES">STORIES</span></a>
+				</div>
+			</section>-->
         </div>
 
        </div>
@@ -52,21 +65,21 @@
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="images/Snapchat-178669715.jpg" class="d-block w-100" alt="First Slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>First slide label</h3>
+      <img src="images/Snapchat-1786697151.jpg" class="d-block w-100" alt="First Slide">
+      <div class="carousel-caption ">
+        <h3>"Imparting Quality Education"</h3>
       </div>
     </div>
-    <div class="carousel-item">
+    <div class="carousel-item" >
       <img src="images/IMG_23141.jpg" class="d-block w-100" alt="Second Slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h3>Second slide label</h3>
+      <div class="carousel-caption">
+        <h3>"Imparting Quality Education"</h3>
       </div>
     </div>
-    <div class="carousel-item">
-      <img src="images/PicsArt_01-18-10.38.44 (1).jpg" class="d-block w-100" alt="Third Slide">
-      <div class="carousel-caption d-none d-md-block">
-        <h4>Third slide label</h4>
+    <div class="carousel-item" >
+      <img src="images/PicsArt_01-18-10.38.441.jpg" class="d-block w-100" alt="Third Slide">
+      <div class="carousel-caption " id="diff">
+        <h3>"Imparting Quality Education"</h3>
       </div>
     </div>
   </div>
@@ -79,8 +92,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-	
-	<!--/************ Main Content *******************/-->
+
+
+<!--/************ Main Content *******************/-->
 
 <div id="main-content" class="container">
 	
@@ -91,39 +105,59 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt molli.</p>
           <!-- <button>Our Vision</button> -->
         </div>
+       
 
         <div class="info">
+        	
         	<section class="row">
         		<div class="item-photo">
 
         			<img src="images/info1.jpg">
         			<h3>What we Teach</h3>
         			<p>Many educational materials in local languages are often out of date. We work with school leaders and publishers to ensure that students have access to current textbooks that are age appropriate and written in their primary language.</p>
-                    <button>Learn More</button>
+                 <!--   <button>Learn More</button>-->
                 </div>
                 </section>
-        </div>
+                 
+     
 
-         <div class="info1">
+         
+        	
         	<section class="row">
-        		<div class="item-photo">
+        		<div class="item-photo1">
 
         			<img src="images/info2.jpg">
-        			<h3>Continuing Education for Teachers</h3>
-        			<p>
-We create bespoke continuing education programs to address the needs of teachers and their student communities. From training on the latest technology to new pedagogical methods, we help teachers make their classrooms engaging and successful.</p>
-                    <button>Learn More</button>
+        			<h3>What we Teach</h3>
+        			<p>Many educational materials in local languages are often out of date. We work with school leaders and publishers to ensure that students have access to current textbooks that are age appropriate and written in their primary language.</p>
+                  <!--  <button>Learn More</button>-->
                 </div>
                 </section>
+
+            <section class="row">
+        		<div class="item-photo2">
+
+        			<img src="images/IMG_20200110_162200.jpg">
+        			<h3>What we Teach</h3>
+        			<p>Many educational materials in local languages are often out of date. We work with school leaders and publishers to ensure that students have access to current textbooks that are age appropriate and written in their primary language.</p>
+                  <!--  <button>Learn More</button>-->
+                </div>
+                </section>
+     
+         </div>
+        <div class="division2" >
+            <p >“With the support from Prayatna, we have been able to serve our students better than ever.”<br><span>-Principal</span> </p>
+          <!-- <button>Our Vision</button> -->
         </div>
 
+        <img src="images/IMG_20180706_1603571.jpg" alt="group photo"  style="padding: 20px; height:750px; width:1300px; ">
+
+
+</div>
 
       
 
 
 
-
-	
 	<!--<footer id="foot1-footer" class="foot1-bg" role="contentinfo">
 		<div class="overlay"></div>
 		<div class="container">
